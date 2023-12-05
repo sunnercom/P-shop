@@ -1,0 +1,105 @@
+/* Core style */
+html {
+	box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	text-decoration: none;
+	line-height: 1.2;
+}
+
+textarea:focus,
+select:focus {
+	outline: none !important;
+	-webkit-appearance: none;
+	box-shadow: none !important;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+input:focus {
+	outline: none !important;
+}
+
+a:active,
+a:focus {
+	outline: 0;
+	border: none;
+	-moz-outline-style: none;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+/* header */
+.header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 7px 50px 5px #3E3B4D;
+}
+
+.header .active {
+    margin-left: 130px;
+}
+
+.header .nav-link {
+	color: white;
+	font-size: 20px;
+    margin-right: 25px;
+    border-bottom: 3px solid #181818;
+}
+
+.header .nav-link:hover {
+    color: #FF5252;
+    border-bottom: 3px solid #FF5252;
+}
+
+.header .navbar-brand {
+	margin-left: 100px;
+}
+
+
+.form {
+	margin-right: 100px;
+}
+
+.form .form-control {
+	margin-left: 30px;
+    width: 260px;
+    color: #FF5252;
+    border: none;
+}
+
+.form .form-btn {
+    width: 100px;
+    color: #FF5252;
+    border: 1px solid #FF5252;
+}
+
+.form .form-btn:hover {
+    background-color: #FF5252;
+    color: white;
+    border: 1px solid #FF5252;
+}
