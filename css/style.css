@@ -240,7 +240,7 @@ a:focus {
 	border: 1px solid #23AAF2;
 }
 
-/* dropdown */
+/* header dropdown */
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -266,11 +266,12 @@ a:focus {
 	  z-index: 1;
 	}
 
-	/* sss */
+	/* header dark-light mode */
 body.dark-mode {
   background-color: #111;
   color: #eee;
 }
+
   .btn-btn {
     background-color: #eee;
     color: #111;
