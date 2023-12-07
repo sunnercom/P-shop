@@ -57,6 +57,27 @@ a:focus {
 	padding: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+	width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #FF5252; 
+	border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #b30000; 
+  }
+
 /* header */
 .header {
     position: fixed;
@@ -105,7 +126,7 @@ a:focus {
     right: 180px;
     border-radius: 5px;
     border: none;
-    height: 37px;
+    height: 36px;
 	background: #FF5252;
 }
 
@@ -154,7 +175,6 @@ a:focus {
 
 .main .main-title {
 	/* typography */
-	color: white;
 	font-size: 40px;
 	font-family: 'Philosopher';
 	font-weight: 600;
@@ -219,3 +239,51 @@ a:focus {
 	background-color: #FFF;
 	border: 1px solid #23AAF2;
 }
+
+/* dropdown */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	/* sss */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+  .btn-btn {
+    background-color: #eee;
+    color: #111;
+	margin-left: 60px;
+	margin-top: 10px;
+  }
+
+body.light-mode {
+  background-color: #eee;
+  color: #111;
+}
+
+ .btn-btn {
+    background-color: #111;
+    color: #eee;
+  }
