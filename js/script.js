@@ -1,3 +1,4 @@
+//dropdown
 var dropdownBtn = document.getElementById("dropdownBtn");
 var dropdownContent = document.getElementById("myDropdown");
 
@@ -9,7 +10,6 @@ dropdownBtn.addEventListener("click", function() {
   }
 });
 
-// Menuni bosib yopish
 window.addEventListener("click", function(event) {
   if (!event.target.matches('.form-btn')) {
     if (dropdownContent.style.display === "block") {
@@ -18,7 +18,7 @@ window.addEventListener("click", function(event) {
   }
 });
 
-
+//darkmode
 function toggleDarkLight() {
     var body = document.getElementById("body");
     var currentClass = body.className;

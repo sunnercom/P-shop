@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P shop</title>
+  <!-- Icon Link -->
+  <link rel="icon" href="images/icons/potato-icon.png">
+  <!-- Inter font link -->
+  <link rel="stylesheet" href="./Fonts/Inter/stylesheet.css">
+  <!-- Nunito Sans font link -->
+  <link rel="stylesheet" href="./Fonts/Nunito Sans/stylesheet.css">
+  <!-- Oswald font link -->
+  <link rel="stylesheet" href="./Fonts/Oswald/stylesheet.css">
+  <!-- Philosopher font link -->
+  <link rel="stylesheet" href="./Fonts/Philospher/stylesheet.css">
+  <!-- normalize css link -->
+  <link rel="stylesheet" href="./libs/normalize.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./libs/Bootstrap/bootstrap.min.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body id="body" class="dark-mode">
+  <div class="wrapper">
+    <!-- header start -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/icons/p_shop_logo.png" alt="p_shop_logo" width="160" height="60">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <img src="images/icons/hamburger-menu.svg" alt="hamburger-menu">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#!">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">About us</a>
+              </li>
+            </ul>
+            <form class="d-flex form" role="form">
+              <input class="form-control me-2" type="search" aria-label="Search">
+              <input class="form-search" type="submit" value="Search">
+              <button class="form-btn" id="dropdownBtn" type="button">Settings</button>
+              <div class="dropdown-content" id="myDropdown">
+                <button class="btn-btn" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+                <a href="#!">Profile</a>
+                <a href="#!">Sunnatbek</a>
+              </div>
+              <button class="btn-cart btn">
+                <img src="images/icons/cart4.svg" alt="cart4">
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <!-- main carousel -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/shop-cart.jpg" class="d-block w-100" alt="shop-cart" height="600">
+            <div class="carousel-caption d-none d-md-block">
+              <img src="images/store.png" alt="store" width="90" height="90">
+              <h5>Our shops are comfortabel</h5>
+              <p>O yes P-shop has many branches and they are everywhere</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/shop-img.jpg" class="d-block w-100" alt="shop-img" height="600">
+            <div class="carousel-caption d-none d-md-block">
+              <img src="images/truck.png" alt="store" width="150" height="150">
+              <h5>Our shops are comfortabel</h5>
+              <p>Ordering service works very fast and they are everywhere</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/shop-img2.jpg" class="d-block w-100" alt="shop-img2" height="600">
+            <div class="carousel-caption d-none d-md-block">
+              <img src="images/technical-support.png" alt="store" width="90" height="90">
+              <h5>Our shops are comfortabel</h5>
+              <p>O yes P-shop 24/7 working and they are everywhere</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <!-- main cards -->
+        <h1 class="main-title">Our Shops</h1>
+        <div class="cards d-flex">
+          <div class="card acive" style="width: 18rem;">
+            <img src="images/shop-apperance.jpg" class="card-img-top" alt="shop-apperance" width="285" height="183">
+            <div class="card-body">
+              <h5 class="card-title"><img src="images/icons/location.svg" alt="location">Surkhandarya</h5>
+              <p class="card-text">This is our store Branch located in Surkhandarya.The service is excellent, all the
+                products are there</p>
+              <a href="#!" class="btn card-btn" data-bs-toggle="modal" data-bs-target="#SurkhandaryaModal">Address</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/tashkent.png" class="card-img-top" alt="shop-apperance" width="285" height="183">
+            <div class="card-body">
+              <h5 class="card-title"><img src="images/icons/location.svg" alt="location">Tashkent</h5>
+              <p class="card-text">This is our store Branch located in Tashkent.The service is excellent, all the
+                products are there</p>
+              <a href="#!" class="btn card-btn" data-bs-toggle="modal" data-bs-target="#TashkentModal">Address</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/shop.png" class="card-img-top" alt="shop-apperance" width="285" height="183">
+            <div class="card-body">
+              <h5 class="card-title"><img src="images/icons/location.svg" alt="location">Samarkand</h5>
+              <p class="card-text">This is our store Branch located in Samarkand.The service is excellent, all the
+                products are there</p>
+              <a href="#!" class="btn card-btn" data-bs-toggle="modal" data-bs-target="#SamarkandModal">Address</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/shop3.png" class="card-img-top" alt="shop-apperance" width="285" height="183">
+            <div class="card-body">
+              <h5 class="card-title"><img src="images/icons/location.svg" alt="location">Qashqadarya</h5>
+              <p class="card-text">This is our store Branch located in Qashqadarya.The service is excellent, all the
+                products are there</p>
+              <a href="#!" class="btn card-btn" data-bs-toggle="modal" data-bs-target="#QashqadaryaModal">Address</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer start -->
+    <footer class="footer">
+      
+    </footer>
+  </div>
+  <!-- Modal surkhandarya adress -->
+  <div class="modal fade" id="SurkhandaryaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Surkhandarya+(p%20shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.maps.ie/population/">Calculate population in area</a></iframe></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal tashkent adress -->
+  <div class="modal fade" id="TashkentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Tashkent+(p%20shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.maps.ie/population/">Population calculator map</a></iframe></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal samarkand adress -->
+  <div class="modal fade" id="SamarkandModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=samarkand+(p%20shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal qashqadarya adress -->
+  <div class="modal fade" id="QashqadaryaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=qashqadarya+(p%20shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.maps.ie/population/">Calculate population in area</a></iframe></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- bootstrap js -->
+  <script src="./libs/Bootstrap/bootstrap.min.js"></script>
+  <!-- swiper bundle min js -->
+  <script src="./libs/swiper/swiper-bundle.min.js"></script>
+  <!-- custom js -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
