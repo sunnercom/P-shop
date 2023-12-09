@@ -28,10 +28,10 @@
 <body id="body" class="dark-mode">
   <div class="wrapper">
     <!-- header start -->
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#!">
             <img src="images/icons/p_shop_logo.png" alt="p_shop_logo" width="160" height="60">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,7 +44,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#!">Home</a>
+                <a class="nav-link actives" aria-current="page" href="#!">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#!">Contact</a>
@@ -58,9 +58,12 @@
               <input class="form-search" type="submit" value="Search">
               <button class="form-btn" id="dropdownBtn" type="button">Settings</button>
               <div class="dropdown-content" id="myDropdown">
-                <button class="btn-btn" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
-                <a href="#!">Profile</a>
-                <a href="#!">Sunnatbek</a>
+                <button class="btn-btn" type="button" name="dark_light" onclick="toggleDarkLight()"
+                  title="Toggle dark/light mode">🌛</button>
+                <p class="d-md-block">
+                  <a class="d-inline-block" href="#!">Uzbek</a> <a class="d-inline-block" href="#!">English</a>
+                </p>
+                <a href="#!">More Settings</a>
               </div>
               <button class="btn-cart btn">
                 <img src="images/icons/cart4.svg" alt="cart4">
@@ -120,7 +123,7 @@
       <div class="container">
         <!-- main cards -->
         <h1 class="main-title">Our Shops</h1>
-        <div class="cards d-flex">
+        <div class="cards d-flex #cardes">
           <div class="card acive" style="width: 18rem;">
             <img src="images/shop-apperance.jpg" class="card-img-top" alt="shop-apperance" width="285" height="183">
             <div class="card-body">
@@ -158,11 +161,130 @@
             </div>
           </div>
         </div>
+        <!-- main acardions -->
+        <button class="accordion num-one">This is shop</button>
+        <div class="panel">
+          <p>Our shops have a lot of best things,products and instruments. Woww it is the best shop. It all very
+            comfortabel because We have rest areas, shops, restuarants nad more. Do not get lost in the choice, always
+            choose the best for yourself.
+            P shop is the right choice, if you choose it, you are not wrong. All products are honest and convenient and
+            reliable and we also have online stores. You can trade without leaving home. And we deliver your products
+            quickly.
+          </p>
+        </div>
+
+        <button class="accordion num-two">This shop</button>
+        <div class="panel">
+          <p>Our shops have a lot of best things,products and instruments. Woww it is the best shop. It all very
+            comfortabel because We have rest areas, shops, restuarants nad more. Do not get lost in the choice, always
+            choose the best for yourself.
+            P shop is the right choice, if you choose it, you are not wrong. All products are honest and convenient and
+            reliable and we also have online stores. You can trade without leaving home. And we deliver your products
+            quickly.
+          </p>
+        </div>
+
+        <button class="accordion num-three">This is shop</button>
+        <div class="panel">
+          <p>Our shops have a lot of best things,products and instruments. Woww it is the best shop. It all very
+            comfortabel because We have rest areas, shops, restuarants nad more. Do not get lost in the choice, always
+            choose the best for yourself.
+            P shop is the right choice, if you choose it, you are not wrong. All products are honest and convenient and
+            reliable and we also have online stores. You can trade without leaving home. And we deliver your products
+            quickly.
+          </p>
+        </div>
+        <!-- Testimonials -->
+        <h1 class="testimonial-title">Testimonials</h1>
+        <div class="testimonials d-flex">
+          <div class="testimonial">
+            <img src="images/my img.png" alt="my img">
+            <h5>Sunnatbek Nuriddinov</h5>
+            <p>
+              It's the best site, why do you know that because I created it myself, so this site is mine
+            </p>
+            <h6>Frontend.dev/junior</h6>
+          </div>
+          <div class="testimonial">
+            <img src="images/husein img.jpg" alt="my img">
+            <h5>Bakhromov Husan</h5>
+            <p>it's normal site,
+              This site has amazing site ideas and design
+              good luck to everyone
+            </p>
+            <h6>Frontend.dev/middle</h6>
+          </div>
+          <div class="testimonial">
+            <img src="images/img_avatar2.png" alt="my img">
+            <h5>Zulfiya Qozonova</h5>
+            <p>
+              It's a nice site, this developer may even be stronger than me, good luck
+            </p>
+            <h6>Web Designer/...</h6>
+          </div>
+          <div class="testimonial">
+            <img src="images/sardor qobilov.png" alt="my img">
+            <h5>Sardor Qobilov</h5>
+            <p>
+              The site has good ideas, great design, great store, good luck to everyone
+            </p>
+            <h6>Frontend.dev/middle</h6>
+          </div>
+        </div>
       </div>
     </main>
     <!-- footer start -->
     <footer class="footer">
-      
+      <div class="footer-left">
+        <img class="brand-logo" src="images/icons/p_shop_logo.png" alt="p_shop_logo">
+
+        <p class="footer-links">
+          <a href="#!">Home</a>
+          ·
+          <a href="#!">Contact</a>
+          ·
+          <a href="#!">About us</a>
+          ·
+          <a href="#!">Shops</a>
+          ·
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#myModal">About Me</a>
+        </p>
+
+        <p class="footer-company-name">P shop © 2023</p>
+        <p class="footer-company-name">Created by: Sunnatbek Nuriddinov</p>
+
+        <div class="footer-icons">
+          <!-- instagram -->
+          <a href="https://www.instagram.com/uzbek_.coder" target="_blank">
+            <img src="images/icons/instagram.svg" alt="instagram">
+          </a>
+          <!-- telegram -->
+          <a href="https://t.me/sunnatbek009" target="_blank">
+            <img src="images/icons/telegram.svg" alt="telegram">
+          </a>
+          <!-- facebook -->
+          <a href="https://www.facebook.com/Tannus Sunner" target="_blank">
+            <img src="images/icons/facebook.svg" alt="facebook">
+          </a>
+          <!-- you tube -->
+          <a href="https://www.youtube.com/@uzbekcoder1" target="_blank">
+            <img src="images/icons/youtube.svg" alt="youtube">
+          </a>
+          <!-- odnaklassniki {OK} -->
+          <a href="https://ok.ru/profile/602090195766" target="_blank">
+            <img src="images/icons/odnoklassniki.svg" alt="odnaklassniki">
+          </a>
+          <!-- phone number -->
+          <a href="tel:+998_(94)_009_40_19" target="_blank">
+            <img src="images/icons/phone.svg" alt="phone">
+          </a>
+          <!-- git hub -->
+          <a href="https://github.com/sunnercom" target="_blank">
+            <img src="images/icons/githuub.svg" alt="githuub">
+          </a>
+        </div>
+      </div>
+
     </footer>
   </div>
   <!-- Modal surkhandarya adress -->
@@ -213,6 +335,23 @@
               marginwidth="0"
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=qashqadarya+(p%20shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
                 href="https://www.maps.ie/population/">Calculate population in area</a></iframe></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img class="my-img" src="images/my img.png" alt="myself">
+        </div>
+        <div class="modal-body">
+          <h3 class="my-title text-dark">Sunnatbek Nuriddinov</h3>
+          <p class="my-text text-dark">
+            I, Sunnatbek Nuriddinov Nurbekovich, was born on June 5, 2009 in Angor District, Surkhandarya Region,
+            Republic of Uzbekistan. I am currently a front end developer {no full}
+          </p>
         </div>
       </div>
     </div>
