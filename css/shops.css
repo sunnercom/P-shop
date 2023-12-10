@@ -1,0 +1,22 @@
+.main-three {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.main-three .cards {
+    margin-bottom: 20px;
+}
+
+.main-three .savdo-btn {
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-bottom: 0;
+}
+
+.main-three .asive {
+    margin-left: 40px;
+}
+
+.main-three .cards img {
+    border: 1px solid #000;
+}
